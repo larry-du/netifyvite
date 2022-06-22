@@ -4,7 +4,12 @@ const routes = [
   {
     path: "/",
     name: "About",
-    component: () => import(/* chunkName: "amz-notice" */ "@/views/About.vue"),
+    component: () => import("@/views/About.vue"),
+  },
+  {
+    path: "/home",
+    name: "Home",
+    component: () => import("@/views/Home.vue"),
   },
 ];
 

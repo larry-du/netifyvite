@@ -1,4 +1,5 @@
 <script setup>
+// console.log(process.env.NODE_ENV === "production");
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 // import HelloWorld from './components/HelloWorld.vue'
@@ -8,6 +9,8 @@
   <div>hi {{ $store.getters.test }}</div>
   <img alt="Vue logo" src="./assets/logo.png" />
   <router-view></router-view>
+  <router-link :to="{ name: 'Home' }">Home</router-link> ||
+  <router-link :to="{ name: 'About' }">About</router-link>
   <HelloWorld msg="component test"></HelloWorld>
   <el-row class="mb-4">
     <el-button>Default</el-button>

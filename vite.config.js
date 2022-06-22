@@ -10,6 +10,7 @@ import checker from "vite-plugin-checker";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "./",
   plugins: [
     vue(),
     eslintPlugin(),
@@ -36,5 +37,6 @@ export default defineConfig({
     assetsDir: "assets", // 輸出靜態資源路徑
     minify: "terser", // tree shaking?!
     cssCodeSplit: false, //拆分 CSS 預設是 true
+    manifest: true,
   },
 });
